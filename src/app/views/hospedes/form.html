@@ -1,0 +1,14 @@
+<div class="container-fluid">
+    <div class="row justify-content-sm-center">
+        <div class="col-sm-10">
+            <h2 class="title">Cadastro de Hospedes</h2><br>
+            <form>
+                <ui-input ng-model="vm.record.nome" label="Nome"></ui-input>
+                <ui-input ng-model="vm.record.email" type="email" label="Email"></ui-input>
+                <ui-input ng-model="vm.record.telefone" label="Telefone"></ui-input><br>
+                <button ng-click="vm.save()" type="button" class="btn btn-success btn-lg">Salvar Registro</button>
+                <a ui-sref="hospede.list" class="btn btn-danger btn-lg">Cancelar</a>
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>RESERVA FÁCIL</title>
+
+</head>
+
+<body>
+  <nav class="navbar navbar-dark fixed-top bgg-dark  flex-md-nowrap p-0 shadow">
+    <a id="menuB" class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">RESERVA FÁCIL</a>
+    <ul class="navbar-nav px-3">
+      <li class="nav-item text-nowrap">
+        <div class="nav-link">
+          <button id="btn btn-outline-light" class="btn btn-outline-light" type="submit">Sair </button>
+        </div>
+      </li>
+    </ul>
+  </nav>
+  <div class="container-fluid">
+    <div class="row">
+      <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+        <div class="sidebar-sticky">
+          <ul class="nav flex-column">
+
+            <li class="nav-item">
+              <a id="menuA" class="nav-link" ui-sref-active="active" ui-sref="menu">
+                Home
+                <span class="sr-only"></span>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a id="menuA" class="nav-link" ui-sref-active="active" ui-sref="hotel.list">
+                Cadastro Hotel
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a id="menuA" class="nav-link" ui-sref-active="active" ui-sref="hospede.list">
+                Cadastro Hospede
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a id="menuA" class="nav-link" ui-sref-active="active" ui-sref="reserva.list">
+                Reservas
+              </a>
+            </li>
+          </ul>
+      </nav>
+
+      <!-- <nav class="col-md-2 d-none d-md-block bg-light sidebar">  
+        <ng-include src="'views/menu.html'"></ng-include>
+      </nav> -->
+
+      <main role="main" class="col-md-9 ml-sm-auto col-lg-10 pxx-4">
+        <ui-view></ui-view>
+      </main>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

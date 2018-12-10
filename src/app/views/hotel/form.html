@@ -1,0 +1,27 @@
+<div class="container-fluid">
+  <div class="row justify-content-sm-center">
+    <div class="col-sm-10">
+      <h2 class="title">Cadastro de Hotel</h2><br>
+      <form>
+        <div class="form-row">
+        </div>
+        <div class="form-group">
+          <label>Nome</label>
+          <input type="text" ng-model="vm.record.nome" class="form-control" placeholder="Hotel Exemplo LTDA">
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label>Estado</label>
+            <input type="text" ng-model="vm.record.estado" class="form-control">
+          </div>
+          <div class="form-group col-md-6">
+            <label>Cidade</label>
+            <input type="text" ng-model="vm.record.cidade" class="form-control">
+          </div>
+        </div><br>
+        <button ng-click="vm.save()" type="button" class="btn btn-success btn-lg">Salvar Registro</button>
+        <a ui-sref="hotel.list" class="btn btn-danger btn-lg">Cancelar</a>
+      </form>
+    </div>
+  </div>
+</div>

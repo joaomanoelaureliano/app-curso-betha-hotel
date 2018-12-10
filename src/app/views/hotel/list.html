@@ -1,0 +1,31 @@
+<div class="container-fluid">
+    <nav class="navbar navbar-light bg-light">
+        <form class="form-inline" ng-submit="vm.load()">
+            <h2 class="title">Lista de Hotel</h2>
+        </form>
+        <a class="btn btn-success" ui-sref="hotel.new">+ Hotel</a>
+    </nav>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">Hotel</th>
+                <th scope="col">Estado</th>
+                <th scope="col">Cidade</th>
+                <th scope="col" style="text-align:center">Reservados</th>
+                <th scope="col"></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="rec in vm.records">
+                <th>{{rec.nome}}</th>
+                <td>{{rec.estado}}</td>
+                <td>{{rec.cidade}}</td>
+                <td style="text-align: center">{{rec.quartosReservado}}</td>
+                <td style="text-align: right">
+                    <a class="btn btn-sm btn-primary" ui-sref="hotel.edit({id: rec.id})">Editar</a>
+                    <button ng-show="rec.quartosReservado == 0" ng-click="vm.excluir(rec.id)" class="btn btn-sm btn-danger" type="button">Excluir</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

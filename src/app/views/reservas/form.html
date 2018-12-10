@@ -1,0 +1,31 @@
+<div class="container-fluid">
+        <div class="row justify-content-sm-center">
+          <div class="col-sm-10">
+            <h2 class="title">Cadastrar Reservas</h2><br>
+            <form>
+                <div class="form-group">
+                    <label>Hotel</label>
+                    <select class="form-control" ng-model="vm.record.hotel" ng-options="hotel as hotel.nome for hotel in vm.hotel track by hotel.id">
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Hospede</label>
+                    <select class="form-control" ng-model="vm.record.hospede" ng-options="hospede as hospede.nome for hospede in vm.hospede track by hospede.id">
+                    </select>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputEstado">Check in</label>
+                        <input type="date" ng-model="vm.record.dtEntrada" class="form-control">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label>Check out</label>
+                        <input type="date" ng-model="vm.record.dtSaida" class="form-control">
+                    </div>
+                </div><br>
+                <button ng-click="vm.save()" type="button" class="btn btn-success btn-lg">Salvar Registro</button>
+                <a ui-sref="reserva.list" class="btn btn-danger btn-lg">Cancelar</a>
+            </form>
+          </div>
+        </div>
+      </div>
