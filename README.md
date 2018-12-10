@@ -1,6 +1,6 @@
 # angularjs-webpack-boilerplate
 
-Projeto reserva de hoteis P.Seletivo - Betha Sistemas.
+Projeto reserva de hoteis - Betha Sistemas.
 
 Java, Spring, Postgres, NodeJS, AngujarJS e Webpack. 
 
